@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="/resmsg.css">
+    <script src="/resmsg.js"></script>
+    <title>reset.html</title>
+</head>
+
+<body>
+    <div id="content">
+        <h3>请按照要求填写修改密码信息</h3>
+        <hr>
+        <div>
+            <input type="text" placeholder="请输入已有用户名" id="uname">
+            <span id="s1"></span>
+        </div>
+        <div>
+            <input type="text" placeholder="请输入已有的邮箱" onblur="getuser()" id="email">
+            <span id="s2"></span>
+        </div>
+        <div>
+            <input id="pwd" type="password" placeholder="请输入新密码">
+            <span id="s3"></span>
+        </div>
+        <div>
+            <input id="upwd" type="password" placeholder="请确认新密码">
+            <span id="s4"></span>
+        </div>
+        <div>
+            <button id="btn" onclick="getAll()" >提&nbsp;&nbsp;&nbsp;&nbsp;交</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
