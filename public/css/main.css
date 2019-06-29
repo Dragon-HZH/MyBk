@@ -183,7 +183,7 @@ div#all-poto>div {
     margin-top: 30px;
 }
 
-#section-btn{
+.section-btn{
     margin-top: 75px;
     margin-bottom: 100px;
     /* background-color: #f00; */
@@ -230,4 +230,134 @@ div#all-poto>div {
     background:url(/banner/news-banner.jpg) no-repeat;
     background-size: 100%;
     height: 360px;
+}
+#page-to-email .page-bg{
+    background-color: rgba(249, 249, 249,.7);
+    height: 100%;
+}
+.page-bg .email-title h2{
+    text-align: center;
+    margin: 0 auto;
+    font-size: 36px;
+    font-weight: 400;
+    padding: 60px 0 80px;
+}
+
+.email-input{
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #fff;
+    position: relative;
+}
+.email-input>input{
+    box-sizing: border-box;
+    width: 100%;
+    line-height: 48px;
+    padding-left: 20px;
+    border: 0;
+    outline: 0;
+    border-bottom: 2px solid #555555;
+}
+.email-input>input:focus{
+    border-bottom-color: #E7E7E7;
+}
+
+.email-input>span{
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    display: block;
+    width: 30px;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.section-title{
+    margin-top: 60px;
+    margin-bottom: 60px;;
+}
+
+.section-bottom{
+    display: flex;
+    justify-content: space-between;
+}
+.section-bottom>div{
+    width: 370px;
+}
+
+.date-ul{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.date-ul>ul>li{
+    float: left;
+}
+
+.date-ul>ul>li + li::before{
+    content: '/';
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #ccc;
+}
+
+.date-ul>ul>li a{
+    color: #aaa;
+}
+
+.bottom-comtent>h2{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 10px;;
+}
+.bottom-comtent>h2 a{
+    color: #444;
+}
+
+.bottom-comtent>p{
+    font-size: 16px;
+    line-height: 25px;
+    color: #999;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #aaa;
+    margin-bottom: 20px;
+}
+
+
+.bottom-a{
+    position: relative;
+    margin-bottom: 40px;
+}
+.bottom-a,.bottom-a a{
+    color: #959595;
+}
+.bottom-left{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    
+}
+
+.bottom-right{
+    float: right;
+}
+
+.bottom-a>a>div{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 83px;
+}
+.bottom-a>a>div>span{
+    margin-left: -15px;
+}
+.bottom-left:hover div>span{
+    transition: all .5s;
+    margin-left: 3px;
 }
