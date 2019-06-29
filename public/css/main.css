@@ -1,27 +1,30 @@
 body {
     background: #fff;
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
 }
 
 /* 公共部分 */
+
 .clear-f:after {
     content: '';
     display: block;
     clear: both;
 }
-.clear-t::before{
+
+.clear-t::before {
     content: '';
     display: table;
 }
 
-ul{
+ul {
     list-style: none;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
@@ -33,7 +36,8 @@ header {
 }
 
 /* 导航 */
-nav{
+
+nav {
     position: fixed;
     top: 0;
     left: 0;
@@ -42,19 +46,21 @@ nav{
     line-height: 48px;
     background-color: #fff;
     box-shadow: 0 1px 15px 1px #AAA;
-    padding-top:40px;
-    padding-left:10%;
+    padding-top: 40px;
+    padding-left: 10%;
     z-index: 999;
 }
 
-nav>ul,nav>ul>li,img{
+nav>ul, nav>ul>li, img {
     float: left;
 }
-nav>ul{
+
+nav>ul {
     padding-left: 120px;
     position: absolute;
 }
-nav a{
+
+nav a {
     display: block;
     text-align: center;
     font-size: 18px;
@@ -62,53 +68,61 @@ nav a{
     width: 100px;
     height: 48px;
 }
-nav>ul ul a{
+
+nav>ul ul a {
     box-sizing: border-box;
     background-color: #fff;
     /* border-bottom:2px solid #999; */
 }
-nav>ul>li a:hover{
+
+nav>ul>li a:hover {
     background-color: rgb(231, 231, 231);
     border-bottom: 2px solid #fff;
 }
-.nav-hover{
+
+.nav-hover {
     display: none;
     border-top: 3px solid #fff;
     position: absolute;
     top: 48px;
     left: 220px;
 }
-.nav-hover a{
+
+.nav-hover a {
     background-color: rgb(221, 220, 220);
     border-bottom: 2px solid #fff;
 }
 
-nav>ul>li:hover .nav-hover{
+nav>ul>li:hover .nav-hover {
     display: block;
 }
 
-#banner{
+#banner {
     width: 100%;
     height: 380px;
     background: url(/banner/banner-1.jpg) no-repeat 100%;
     position: relative;
 }
-#banner>div{
+
+#banner>div {
     height: 100%;
     background-color: rgba(245, 243, 243, 0.7);
     text-align: center;
 }
-#banner>div p{
-    font-size:48px;
+
+#banner>div p {
+    font-size: 48px;
     margin-top: 65px;
     margin-bottom: 30px;
 }
-#banner>div h6{
+
+#banner>div h6 {
     color: #757575;
     font-size: 24px;
     font-weight: normal;
 }
-#banner>div>div{
+
+#banner>div>div {
     border: 3px solid #333;
     width: 200px;
     height: 200px;
@@ -120,34 +134,24 @@ nav>ul>li:hover .nav-hover{
     background-position: bottom;
 }
 
-
 /* 主体部分 */
-section{
+
+section {
     margin-top: 100px;
 }
-section>div{
+
+section>div {
     width: 80%;
     margin: 0 auto;
 }
 
-section>div:last-child{
-    margin-top: 60px;
-    display: flex;
-    justify-content: space-around;
-}
 
-section>div:last-child > div{
-    width: 370px;
-    /* border: 1px solid red; */
-}
-#nav>ul{
-    margin-left: 15px;
-}
-#nav>ul>li{
+section>#nav>ul>li {
     float: left;
     width: 70px;
 }
-#nav>ul>li>a{
+
+section>#nav>ul>li>a {
     box-sizing: border-box;
     border-left: 2px solid transparent;
     padding-left: 3px;
@@ -158,11 +162,72 @@ section>div:last-child > div{
     transition: 1s;
 }
 
-#nav>ul>li>a:hover{
+section>#nav>ul>li>a:hover {
     color: #666;
     border-left: 2px solid #333;
 }
 
-#all-poto>div div + div{
+
+div#all-poto {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+div#all-poto>div {
+    width: 370px;
+    /* border: 1px solid red; */
+}
+
+#all-poto>div div+div {
     margin-top: 30px;
+}
+
+#section-btn{
+    margin-top: 75px;
+    margin-bottom: 100px;
+    /* background-color: #f00; */
+}
+    .more-btn{
+        height: 50px;
+        width: 230px;
+        margin: 0 auto;
+        line-height: 55px;
+        background-color: #f9f9f9;
+        position: relative;
+    }
+    .more-btn:hover::after{
+        width: 75%;
+    }
+    .more-btn a{
+        letter-spacing: 3px;
+        color: #090909;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .more-btn:before{
+        content: '';
+        position: absolute;
+        top: 0;
+        background-color: #e7e7e7;
+        height: 5px;
+        width: 100%;
+        left: 0;
+    }
+    .more-btn:after{
+        content: '';
+        position: absolute;
+        top: 0;
+        background-color: #090909;
+        height: 5px;
+        width: 50%;
+        left: 0;
+        transition: all .5s ease-in-out;
+    }
+
+#page-to-email{
+    background:url(/banner/news-banner.jpg) no-repeat;
+    background-size: 100%;
+    height: 360px;
 }
