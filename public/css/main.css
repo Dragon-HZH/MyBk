@@ -102,7 +102,7 @@ nav>ul>li:hover .nav-hover {
 }
 .nav-hover a:hover{
     background-color: rgb(63, 63, 63);
-    border-bottom: 2px solid rgb(226, 248, 25);
+    border-bottom: 2px solid rgb(60, 125, 247);
 }
 
 #banner {
@@ -110,6 +110,7 @@ nav>ul>li:hover .nav-hover {
     height: 380px;
     background: url(/banner/banner-1.jpg) no-repeat 100%;
     position: relative;
+    margin-top: 38px;
 }
 
 #banner>div {
