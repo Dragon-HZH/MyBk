@@ -46,9 +46,3 @@ function right_name() {
     xhr.send();
 }
 
-// function setabled() {
-//     console.log(data)
-//     if(data.code !=1 && data.mcode != 1){
-//         bon_1.disabled = false;
-//     }
-// }
