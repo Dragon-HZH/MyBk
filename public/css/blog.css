@@ -1,0 +1,192 @@
+/* 公共部分 */
+
+.clear-f:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.clear-t::before {
+    content: '';
+    display: table;
+}
+
+
+
+section {
+    width: 80%;
+    margin: 100px auto 0;
+    /* border: 1px solid red; */
+}
+
+#d-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#d-flex img {
+    float: none !important;
+}
+
+#d-flex>div {
+    width: 370px;
+}
+
+.date-ul {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.date-ul>ul>li {
+    float: left;
+}
+
+.date-ul>ul>li+li::before {
+    content: '/';
+    margin-left: 10px;
+    margin-right: 10px;
+    color: rgb(153, 153, 153);
+    font-weight: 300;
+}
+
+.date-ul>ul>li a {
+    color: rgb(153, 153, 153);
+    font-weight: 300;
+}
+
+
+.list-item>h2 {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 10px;
+    ;
+}
+
+.list-item>h2 a {
+    color: rgb(56, 56, 56);
+    font-weight: 600;
+}
+
+.bottom-a {
+    position: relative;
+    margin-bottom: 70px;
+}
+
+.bottom-a, .bottom-a a {
+    color: #959595;
+}
+
+.bottom-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.bottom-a>a>div {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 83px;
+}
+
+.bottom-a>a>div>span {
+    margin-left: -15px;
+}
+
+.bottom-left:hover div>span {
+    transition: all .5s;
+    margin-left: 3px;
+}
+
+
+#pages ul{
+    width: 30%;
+    margin: 60px auto;
+    line-height: 30px;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-around;
+}
+#pages ul li a{
+    display: block;
+    text-align: center;
+    border: 1px solid #5a5a5a;
+    width: 30px;
+    line-height: 30px;
+    color: #5a5a5a;
+    transition: all .2s linear;
+}
+#pages ul li a:hover{
+    background-color: rgb(233, 233, 233);
+    border-color: #dadada;
+}
+
+
+
+#page-to-email {
+    background: url(/banner/news-banner.jpg) no-repeat;
+    background-size: 100%;
+    height: 360px;
+}
+
+#page-to-email .page-bg {
+    background-color: rgba(249, 249, 249, .7);
+    height: 100%;
+}
+
+.page-bg .email-title h2 {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 36px;
+    font-weight: 400;
+    padding: 60px 0 80px;
+}
+
+.email-input {
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #fff;
+    position: relative;
+}
+
+.email-input>input {
+    box-sizing: border-box;
+    width: 100%;
+    line-height: 48px;
+    padding-left: 20px;
+    border: 0;
+    outline: 0;
+    border-bottom: 2px solid #555555;
+}
+
+.email-input>input:focus {
+    border-bottom-color: #E7E7E7;
+}
+
+.email-input>span {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    display: block;
+    width: 30px;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+footer{
+    width: 80%;
+    margin: 0 auto;
+}
+footer>div{
+    text-align: center;
+    margin: 50px 0;
+}
