@@ -142,6 +142,32 @@ nav>ul>li:hover .nav-hover {
     left: 50%;
     bottom: -50px;
     margin-left: -100px;
-    background: url(/icons.png) no-repeat;
-    background-position: bottom;
+}
+.banner-item-ul{
+    width: 80%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,-50%)
+}
+.banner-item-ul ul li{
+    float: left;
+}
+.banner-item-ul ul li{
+    width: 20px;
+    height: 20px;
+    margin-left: 15px;
+    background-image: url(/icons.png);
+    background-repeat: no-repeat;
+    background-position: -27px -14px;
+    cursor: pointer;
+}
+.banner-item-ul ul li:nth-of-type(2){
+    background-position: -77px -14px !important;
+}
+.banner-item-ul ul li:nth-of-type(3){
+    background-position: -127px -14px !important;
+}
+.banner-item-ul ul li:nth-of-type(4){
+    background-position: -177px -14px !important;
 }
