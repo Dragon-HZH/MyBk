@@ -1,17 +1,3 @@
-/* 公共部分 */
-
-.clear-f:after {
-    content: '';
-    display: block;
-    clear: both;
-}
-
-.clear-t::before {
-    content: '';
-    display: table;
-}
-
-
 
 section {
     width: 80%;
@@ -126,7 +112,10 @@ section {
     background-color: rgb(233, 233, 233);
     border-color: #dadada;
 }
-
+#pages ul li a:focus{
+    background-color: rgb(233, 233, 233);
+    border-color: #dadada;
+}
 
 
 #page-to-email {

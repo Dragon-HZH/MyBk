@@ -101,8 +101,10 @@ nav>ul>li:hover .nav-hover {
     border-bottom: 2px solid #fff;
 }
 .nav-hover a:hover{
-    background-color: rgb(63, 63, 63);
-    border-bottom: 2px solid rgb(60, 125, 247);
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    background-color: rgb(163, 163, 163);
+    border-bottom: 2px solid #fff;
 }
 
 
