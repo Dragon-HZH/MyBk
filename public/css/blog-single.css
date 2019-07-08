@@ -170,10 +170,10 @@ section .section-l div{
     color: #555;
 }
 
-
+/* 右侧 */
 section .section-r{
     width: 26%;
-    border: 1px solid #0f0;
+    /* border: 1px solid #0f0; */
 }
 
 .section-r .myContent>input{
@@ -202,6 +202,7 @@ section .section-r{
 }
 .my-ul{
     margin-top: 20px;
+    margin-bottom: 55px;
 }
 .my-ul ul li{
     position: relative;
@@ -228,4 +229,44 @@ section .section-r{
     position: absolute;
     top: 0;
     right:10px;
+}
+
+
+#dlist{
+    margin-top: 35px;
+    margin-bottom: 50px;
+}
+.dlist-item{
+    margin-bottom: 15px;
+}
+
+.dlist-item>img{
+    float: left !important;
+    margin-right: 10px;
+}
+.dlist-item-a a{
+    display: block;
+    color: #555;
+    font-size: 13px;
+    line-height: 24px;
+}
+.dlist-item-a a:first-child{
+    line-height: 28px;
+    font-family: 宋体;
+    font-size: 18px;
+}
+
+#utable{
+    margin-top: 25px;
+}
+.blog-tag-list li{
+    float: left;
+}
+.blog-tag-list li a{
+    display: block;
+    padding:10px 20px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    color: #555;
 }
