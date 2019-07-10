@@ -1,5 +1,3 @@
-
-
 /* 主体部分 */
 
 section {
@@ -51,8 +49,27 @@ div#all-photo>div {
     position: relative;
     cursor: pointer;
 }
-#all-photo>div>div img{
+
+#all-photo>div>div img {
     float: none !important;
+}
+.yanChi{
+    width: 50%;
+    text-align: left;
+    position: absolute;
+    right: 0;
+    bottom: 15px;
+    z-index: 100;
+    font-family: '宋体';
+    opacity: 0;
+}
+
+.yanChi h3{
+    margin-bottom: 10px;
+}
+#all-photo>div>div:hover .yanChi{
+    transition: all .5s .5s;
+    opacity: 1;
 }
 /* 方框弹出的过度出效果 */
 
@@ -77,7 +94,7 @@ div#all-photo>div {
     position: absolute;
     bottom: 0;
     right: 0;
-    transition: all .5s;
+    transition: all .5s .1s;
 }
 
 #all-photo>div>div:hover::after, #all-photo>div>div:hover::before {
