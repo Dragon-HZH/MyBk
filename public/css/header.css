@@ -73,18 +73,15 @@ nav a {
 nav>ul ul a {
     box-sizing: border-box;
     background-color: #fff;
-    /* border-bottom:2px solid #999; */
 }
 
 nav>ul>li:hover a {
     background-color: rgb(63, 63, 63);
     color: #fff;
-    border-bottom: 2px solid #fff;
 }
 
 .nav-hover {
     display: none;
-    border-top: 3px solid #fff;
     position: absolute;
     top: 48px;
     left: 220px;
@@ -98,13 +95,12 @@ nav>ul>li:hover .nav-hover {
 .nav-hover a {
     background-color: rgb(63, 63, 63);
     color: #fff;
-    border-bottom: 2px solid #fff;
+    border-top: 2px solid #fff;
 }
 .nav-hover a:hover{
     color: #fff;
     text-shadow: 1px 1px 1px #000;
     background-color: rgb(163, 163, 163);
-    border-bottom: 2px solid #fff;
 }
 
 

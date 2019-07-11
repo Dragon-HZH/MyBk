@@ -215,7 +215,9 @@ div#all-photo>div {
 .section-bottom>div {
     width: 370px;
 }
-
+.section-bottom>div>div>img{
+    width: 370px;height: 370px;
+}
 .date-ul {
     margin-top: 20px;
     margin-bottom: 20px;
