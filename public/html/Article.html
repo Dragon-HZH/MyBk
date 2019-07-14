@@ -7,7 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="/normalize.css">
     <link rel="stylesheet" href="/header.css">
-    <title>header</title>
+    <link rel="stylesheet" href="/Article.css">
+    <title>发表文章</title>
 </head>
 
 <body>
@@ -30,7 +31,7 @@
                         </li>
                     </ul>
                 </li>
-                <li><a href="/Article.html">发表文章</a></li>
+                <li><a href="javascript:;">发表文章</a></li>
                 <li><a href="#">关于我们</a></li>
             </ul>
         </nav>
@@ -38,10 +39,10 @@
         <div id="banner">
             <div class="clear-t">
                 <p>
-                    爱博客,像爱IT一样
+                    热爱生活,热爱IT,用双手实现梦想
                 </p>
-                <h6>web开发工程师</h6>
-                <div>
+                <h6>改变从现在开始</h6>
+                <!-- <div>
                     <div class="banner-item-ul">
                         <ul class="clear-f">
                             <li></li>
@@ -50,10 +51,40 @@
                             <li></li>
                         </ul>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </header>
+    <section>
+        <h2>
+            <span>发表文章</span>
+        </h2>
+        <form action="#" method="post">
+            <br>
+            <p>
+                <input class="comment_input" id="author" maxlength="50" name="author" required="required"
+                    size="25" tabindex="1" type="text">
+                <label for="author">文章标题</label>
+            </p>
+            <br>
+            <p class="classification">
+                <input name="list" type="radio" value="1">个人博客
+                <input name="list" type="radio" value="2">公开博客
+                <input name="list" type="radio" value="3">其他博客
+            </p>
+
+            <br>
+
+            <textarea name="contents" id="cnt" cols="150" rows="40"></textarea>
+            <br>
+            <p>
+                <input id="id_article" name="article" type="hidden" value="1">
+                <input name="submit" type="submit" id="submit" tabindex="5" value="提交" class="button" />
+            </p>
+            <br>
+        </form>
+           
+    </section>
 </body>
 
 </html>

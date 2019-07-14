@@ -1,0 +1,24 @@
+body{
+    background-color: rgba(241, 241, 241, 0.712);
+}
+section{
+    width: 80%;
+    margin: 50px auto 0;
+    /* border: 1px solid red; */
+    /* height: 500px; */
+}
+
+section>h2:first-child{
+    line-height: 42px;
+    border-bottom: 1px  solid #ccc;
+    box-shadow: 0 0 1px 1px 
+}
+section>h2:first-child span{
+    font-size: 22px;
+    font-weight: 400;
+    padding:3px 8px;
+    height: 100%;
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+}
