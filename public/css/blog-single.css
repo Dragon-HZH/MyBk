@@ -1,5 +1,4 @@
-
-section{
+section {
     /* border: 1px solid red; */
     width: 80%;
     margin: 100px auto 0;
@@ -7,24 +6,25 @@ section{
     justify-content: space-between;
     align-items: flex-start;
 }
-section img{
+
+section img {
     float: none !important;
 }
 
-section .section-l{
+section .section-l {
     width: 71%;
     /* border: 1px solid #0ff; */
 }
 
-section .section-l>div>img{
+section .section-l>div>img {
     width: 100%;
 }
 
-.title-2{
+.title-2 {
     margin-top: 20px;
 }
 
-.title-2 a{
+.title-2 a {
     color: #333;
     font-weight: 500;
     font-size: 22px;
@@ -50,63 +50,70 @@ section .section-l>div>img{
     color: #aaa;
 }
 
-section .section-l p{
+section .section-l p {
     color: #aaa;
     font-size: 16px;
     margin-bottom: 20px;
     line-height: 1.5em;
 }
-section .section-l div{
+
+section .section-l div {
     box-sizing: border-box;
 }
-.items-1{
+
+.items-1 {
     display: flex;
     justify-content: space-between;
     align-content: center;
     margin-bottom: 40px;
 }
 
-.item-l{
+.item-l {
     width: 40%;
 }
-.item-r{
+
+.item-r {
     width: 55%;
     position: relative;
 }
-.item-r p{
+
+.item-r p {
     position: absolute;
     top: 50%;
     left: 0;
     transform: translateY(-50%);
 }
-.items-1>div img{
+
+.items-1>div img {
     width: 100%;
 }
 
-.items-2{
+.items-2 {
     padding: 15px;
     background-color: #F9F9F9;
     border-left: 3px solid #eee;
 }
-.items-2 p{
+
+.items-2 p {
     font-size: 18px !important;
     line-height: 25px !important;
     font-style: italic;
     margin-bottom: 0px !important;
 }
-.items-2+p{
+
+.items-2+p {
     margin-top: 20px;
 }
 
-
-.item-ul{
+.item-ul {
     padding: 60px 0;
 }
 
-.item-ul ul li{
+.item-ul ul li {
     float: left;
 }
-.item-ul ul li:first-child~li{
+
+.item-ul ul li:first-child~li {
     width: 20px;
     height: 20px;
     margin-left: 15px;
@@ -115,79 +122,128 @@ section .section-l div{
     background-position: -27px -14px;
     cursor: pointer;
 }
-.item-ul ul li:nth-of-type(3){
+
+.item-ul ul li:nth-of-type(3) {
     background-position: -77px -14px !important;
 }
-.item-ul ul li:nth-of-type(4){
+
+.item-ul ul li:nth-of-type(4) {
     background-position: -127px -14px !important;
 }
-.item-ul ul li:nth-of-type(5){
+
+.item-ul ul li:nth-of-type(5) {
     background-position: -177px -14px !important;
 }
 
-.items-p{
+.items-p {
     display: flex;
     flex-direction: column;
     /* justify-content: flex-end; */
     align-items: flex-end;
     width: 100%;
-
     /* border: 1px solid #0f0;   */
 }
 
-.items-p>div{
+.items-p>div {
     position: relative;
     padding: 20px;
     margin-bottom: 30px;
     box-shadow: 0 0 3px 1px #ccc;
     /* width: 95% !important;  */
 }
-.items-p-l{
+
+.items-p-l {
     float: left;
     width: 18%;
 }
-.items-p-r{
+
+.items-p-r {
     width: 80%;
     /* border: 1px solid red; */
     float: right;
 }
 
-.items-p>div:nth-of-type(2n){
+.items-p>div:nth-of-type(2n) {
     width: 95% !important;
 }
 
-.items-p-r>h3{
+.items-p-r>h3 {
     font-weight: 500;
     font-size: 16px;
 }
-.items-p-r>h3+h4{
+
+.items-p-r>h3+h4 {
     font-weight: 500;
     font-size: 16px;
     margin: 10px 0;
     color: #aaa;
 }
-.items-p-r a{
+
+.items-p-r a {
     color: #555;
 }
 
+/* 留言框 */
+
+div.to-say {
+    margin-top: 150px;
+    font-family: '宋体', '楷体', '雅黑';
+    position: relative;
+}
+
+div.to-say .frm {
+    margin-top: 50px;
+    padding: 30px;
+    box-shadow: 0 0 3px 2px #ccc;
+}
+
+.frm>input, .frm>textarea {
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    outline: 0;
+}
+
+.frm>input {
+    line-height: 36px;
+    padding: 0px 20px;
+}
+
+.frm>textarea {
+    padding: 20px 20px;
+    line-height: 22px;
+}
+.frm>button{
+    position: absolute;
+    right: 30px;
+    bottom: 17px;
+    width: 150px;
+    line-height: 32px;
+    font-weight: 600;
+    font-size: 22px;
+}
+
 /* 右侧 */
-section .section-r{
+section .section-r {
     width: 26%;
     /* border: 1px solid #0f0; */
 }
 
-.section-r .myContent>input{
+.section-r .myContent>input {
     box-sizing: border-box;
     width: 100%;
     line-height: 28px;
     outline: 0;
     padding: 10px;
 }
-.myContent{
+
+.myContent {
     position: relative;
     margin-bottom: 50px;
 }
-.myContent::after{
+
+.myContent::after {
     content: '';
     display: block;
     width: 30px;
@@ -200,19 +256,23 @@ section .section-r{
     background-image: url(/icon-sou.png);
     background-repeat: no-repeat;
 }
-.my-ul{
+
+.my-ul {
     margin-top: 20px;
     margin-bottom: 55px;
 }
-.my-ul ul li{
+
+.my-ul ul li {
     position: relative;
     display: block;
     overflow: hidden;
     height: 30px;
     margin-top: 6px;
 }
-.my-ul>ul>li>a{
-    width: 30%;height: 100%;
+
+.my-ul>ul>li>a {
+    width: 30%;
+    height: 100%;
     display: inline-block;
     position: absolute;
     top: 0;
@@ -220,53 +280,107 @@ section .section-r{
     color: #757575;
     transition: all .3s linear;
 }
-.my-ul>ul>li:hover a{
+
+.my-ul>ul>li:hover a {
     left: 0;
     color: #757575c7;
 }
 
-.my-ul ul li a + span{
+.my-ul ul li a+span {
     position: absolute;
     top: 0;
-    right:10px;
+    right: 10px;
 }
 
-
-#dlist{
+#dlist {
     margin-top: 35px;
     margin-bottom: 50px;
 }
-.dlist-item{
+
+.dlist-item {
     margin-bottom: 15px;
 }
 
-.dlist-item>img{
+.dlist-item>img {
     float: left !important;
     margin-right: 10px;
 }
-.dlist-item-a a{
+
+.dlist-item-a a {
     display: block;
     color: #555;
     font-size: 13px;
     line-height: 24px;
 }
-.dlist-item-a a:first-child{
+
+.dlist-item-a a:first-child {
     line-height: 28px;
     font-family: 宋体;
     font-size: 18px;
 }
 
-#utable{
+#utable {
     margin-top: 25px;
 }
-.blog-tag-list li{
+
+.blog-tag-list li {
     float: left;
 }
-.blog-tag-list li a{
+
+.blog-tag-list li a {
     display: block;
-    padding:10px 20px;
+    padding: 10px 20px;
     margin-right: 5px;
     margin-bottom: 5px;
     border: 1px solid #ccc;
     color: #555;
+}
+
+footer {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+}
+
+footer>div#dcon {
+    padding: 50px 0;
+    width: 85%;
+    /* background-color: #f2f2f2; */
+    border-top: 1px solid #ccc;
+    text-align: center;
+}
+
+#toTop {
+    cursor: pointer;
+    position: absolute;
+    top: 0px;
+    right: 60px;
+    border: 2px solid #ccc;
+    width: 65px;
+    height: 65px;
+}
+
+#toTop>span {
+    display: block;
+    font-size: 14px;
+    height: 20px;
+    line-height: 20px;
+    width: 60px;
+    position: absolute;
+    top: -5px;
+    left: 2px;
+    transform: rotate(-90deg);
+    background-color: #fff;
+}
+
+#toTop>span::after {
+    content: '';
+    display: block;
+    border-top: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 15px solid #aaa;
+    position: absolute;
+    top: 3px;
+    right: -22px;
 }

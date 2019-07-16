@@ -169,13 +169,14 @@ section {
     text-align: center;
     cursor: pointer;
 }
-
-
 footer{
-    width: 80%;
-    margin: 0 auto;
+    margin-top: 100px;
 }
-footer>div{
-    text-align: center;
-    margin: 50px 0;
+
+
+#toTop{
+    top: -20px;
+    right: 50px;
+    background-color: #fff;
+    border: 2px solid #666;
 }

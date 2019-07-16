@@ -1,11 +1,46 @@
 
-footer {
+
+footer{
     width: 80%;
     margin: 0 auto;
-    background-color: #f2f2f2;
-    padding: 50px 0px;
+    position: relative;
+}
+footer>div#dcon {
+    padding: 50px 0;
+    width: 85%;
+    border-top: 1px solid #ccc;
+    text-align: center;
 }
 
-footer p {
-    text-align: center;
+
+#toTop{
+    cursor: pointer;
+    position:absolute;
+    top: 0px;
+    right: 60px;
+    border: 2px solid #ccc;
+    width: 65px;height: 65px;
+}
+#toTop>span{
+    display: block;
+    font-size: 14px;
+    height: 20px;
+    line-height: 20px;
+    width: 60px;
+    position: absolute;
+    top: -5px;
+    left: 2px;
+    transform: rotate(-90deg);
+    background-color: #fff;
+}
+#toTop>span::after{
+    content: '';
+    display: block;
+    border-top: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 15px solid #aaa;
+    position: absolute;
+    top: 3px;
+    right: -22px;
 }
