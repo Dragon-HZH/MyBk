@@ -186,9 +186,10 @@ section .section-l div {
 /* 留言框 */
 
 div.to-say {
-    margin-top: 150px;
+    margin-top: 120px;
     font-family: '宋体', '楷体', '雅黑';
     position: relative;
+    margin-bottom: 50px;
 }
 
 div.to-say .frm {
@@ -214,16 +215,23 @@ div.to-say .frm {
     padding: 20px 20px;
     line-height: 22px;
 }
-.frm>button{
+.frm>span.btn{
     position: absolute;
     right: 30px;
     bottom: 17px;
     width: 150px;
-    line-height: 32px;
+    text-align: center;
+    line-height: 36px;
     font-weight: 600;
     font-size: 22px;
+    background-color: #ddd;
+    color: #757575;
+    cursor: pointer;
 }
-
+.frm>span.btn:hover{
+    background-color: #aaa;
+    color: #fff;
+}
 /* 右侧 */
 section .section-r {
     width: 26%;
