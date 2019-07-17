@@ -1,12 +1,12 @@
 toTop.onclick = function (e) {
     e.stopPropagation();
-    var y = window.scrollY;
+    let y = window.scrollY;
 
     e.preventDefault();
-    var sid = setInterval(function () {
+    let sid = setInterval(function () {
         if (y <= 0) {
             clearInterval(sid);
-            console.log('over')
+            sid = null;
         } else {
             y -= 20;
             if (y < 0) {

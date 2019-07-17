@@ -1,6 +1,6 @@
 section {
     /* border: 1px solid red; */
-    width: 80%;
+    width: 1215px;
     margin: 100px auto 0;
     display: flex;
     justify-content: space-between;
@@ -240,7 +240,7 @@ section .section-r {
 
 .section-r .myContent>input {
     box-sizing: border-box;
-    width: 100%;
+    width: 316px;
     line-height: 28px;
     outline: 0;
     padding: 10px;
@@ -279,8 +279,8 @@ section .section-r {
 }
 
 .my-ul>ul>li>a {
-    width: 30%;
-    height: 100%;
+    width: 97px;
+    height: 30px;
     display: inline-block;
     position: absolute;
     top: 0;
@@ -345,7 +345,7 @@ section .section-r {
 }
 
 footer {
-    width: 80%;
+    width: 1215px;
     margin: 0 auto;
     position: relative;
 }
