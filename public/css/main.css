@@ -9,6 +9,10 @@ section>div {
     width: 100%;
 }
 
+section>#nav>ul {
+    list-style: none;
+}
+
 section>#nav>ul>li {
     float: left;
     width: 70px;
@@ -31,7 +35,7 @@ section>#nav>ul>li>a:hover {
 }
 
 div#all-photo {
-    margin-top: 60px;
+    margin-top: 30px;
     display: flex;
     justify-content: space-between;
 }
@@ -53,7 +57,8 @@ div#all-photo>div {
 #all-photo>div>div img {
     float: none !important;
 }
-.yanChi{
+
+.yanChi {
     width: 50%;
     text-align: left;
     position: absolute;
@@ -64,13 +69,15 @@ div#all-photo>div {
     opacity: 0;
 }
 
-.yanChi h3{
+.yanChi h3 {
     margin-bottom: 10px;
 }
-#all-photo>div>div:hover .yanChi{
+
+#all-photo>div>div:hover .yanChi {
     transition: all .5s .5s;
     opacity: 1;
 }
+
 /* 方框弹出的过度出效果 */
 
 #all-photo>div>div::before {
@@ -216,9 +223,12 @@ div#all-photo>div {
     width: 370px;
     height: 685px;
 }
-.section-bottom>div>div>img{
-    width: 370px;height: 370px;
+
+.section-bottom>div>div>img {
+    width: 370px;
+    height: 370px;
 }
+
 .date-ul {
     margin-top: 20px;
     margin-bottom: 20px;
