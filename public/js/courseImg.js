@@ -6,7 +6,8 @@ window.addEventListener('load',function(){
     let imgs = document.getElementById("ul-imgs");
     let idxs = document.getElementById("ul-idxs");
     let lis=idxs.children;
-    function moveTo(to){
+    // console.log(imgs,idxs,lis);
+    let curTo = function (to=undefined){
         //如果用户没有传入要跳到第几张图，就默认跳到当前图的下一个张
         if(to==undefined){
           to=i+1;
@@ -32,4 +33,15 @@ window.addEventListener('load',function(){
         //再给当前位置的小圆点添加class active
         lis[i].className="active";
       }
+
+      function contim() {
+        setTimeout(function(){
+          curTo();
+          contim();
+        },stime*5)
+      }
+      contim();
+      
+      
+      console.log('come in ok')
 });
