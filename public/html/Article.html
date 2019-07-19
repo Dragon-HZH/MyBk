@@ -12,48 +12,7 @@
 </head>
 
 <body>
-    <header>
-        <!-- 导航部分 -->
-        <nav class="clear-f">
-            <img src="/log/logo.png" alt="图标">
-            <ul>
-                <li><a href="/main.html">首页</a></li>
-                <li><a href="#">生活之舟</a>
-                    <ul class="nav-hover">
-                        <li>
-                            <a href="/blog-single.html">我的空间</a>
-                        </li>
-                        <li>
-                            <a href="/blog.html">文章列表</a>
-                        </li>
-                        <li>
-                            <a href="/blog-photo.html">生活相册</a>
-                        </li>
-                    </ul>
-                </li>
-                <li><a href="javascript:;">发表文章</a></li>
-                <li><a href="#">关于我们</a></li>
-            </ul>
-        </nav>
-        <!-- banner部分 -->
-        <div id="banner">
-            <div class="clear-t">
-                <p>
-                    热爱生活,热爱IT,用双手实现梦想
-                </p>
-                <h6>改变从现在开始</h6>
-                <!-- <div>
-                    <div class="banner-item-ul">
-                        <ul class="clear-f">
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                        </ul>
-                    </div>
-                </div> -->
-            </div>
-        </div>
+    <header id="header">
     </header>
     <section>
         <h2>
@@ -62,8 +21,8 @@
         <form action="#" method="post">
             <br>
             <p>
-                <input class="comment_input" id="author" maxlength="50" name="author" required="required"
-                    size="25" tabindex="1" type="text">
+                <input class="comment_input" id="author" maxlength="50" name="author" required="required" size="25"
+                    tabindex="1" type="text">
                 <label for="author">文章标题</label>
             </p>
             <br>
@@ -83,8 +42,10 @@
             </p>
             <br>
         </form>
-           
+
     </section>
+    <script src="/jquery-3.2.1.js"></script>
+    <script src="/header.js"></script>
 </body>
 
 </html>
