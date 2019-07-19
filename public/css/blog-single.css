@@ -1,3 +1,5 @@
+
+
 section {
     /* border: 1px solid red; */
     width: 1215px;
@@ -16,9 +18,9 @@ section .section-l {
     /* border: 1px solid #0ff; */
 }
 
-section .section-l>div>img {
+/* section .section-l>div>img {
     width: 100%;
-}
+} */
 
 .title-2 {
     margin-top: 20px;

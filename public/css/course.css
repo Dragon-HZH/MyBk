@@ -1,3 +1,71 @@
-.section-l{
-    border: 1px solid red;
+#main {
+    height: 540px;
+    overflow: hidden;
+    position: relative;
+}
+
+#main>ul#ul-imgs {
+    width: 500%;
+    margin-left: 0%;
+}
+
+#main>ul#ul-imgs.transition {
+    transition: all .5s linear;
+}
+
+#main>ul#ul-imgs>li {
+    width: 20%;
+    float: left;
+}
+
+#main>ul#ul-imgs>li img {
+    width: 100%;
+}
+
+#ul-idxs {
+    width: 100px;
+    margin: 0 auto;
+    list-style: none;
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    margin-left: -50px;
+}
+
+#ul-idxs>li {
+    float: left;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+#ul-idxs>li.active {
+    background-color: blue;
+}
+
+#btn-left, #btn-right {
+    width: 60px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+#btn-left {
+    left: 20px;
+    background-image: url(/courses/left_ar.png);
+}
+
+#btn-right {
+    right: 20px;
+    background-image: url(/courses/right_ar.png);
+}
+
+#btn-left:hover, #btn-right:hover {
+    background-size: 40px 70px
 }
