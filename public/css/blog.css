@@ -13,6 +13,7 @@ section {
 
 #d-flex img {
     float: none !important;
+    width: 370px;
 }
 
 #d-flex>div {
@@ -117,7 +118,7 @@ section {
     border-color: #dadada;
 }
 
-
+/* 
 #page-to-email {
     background: url(/banner/news-banner.jpg) no-repeat;
     background-size: 100% 100%;
@@ -127,7 +128,7 @@ section {
 #page-to-email .page-bg {
     background-color: rgba(249, 249, 249, .7);
     height: 100%;
-}
+} 
 
 .page-bg .email-title h2 {
     text-align: center;
@@ -169,6 +170,8 @@ section {
     text-align: center;
     cursor: pointer;
 }
+*/
+
 footer{
     margin-top: 100px;
 }
