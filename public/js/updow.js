@@ -10,7 +10,7 @@ $(function () {
             if(nav.getAttribute('id')=='nav1'){
                 nav.setAttribute('id','nav2');
             }
-            banner.style.marginTop = '30px';
+            banner.style.marginTop = '5px';
         } else {
             // 添加id属性
             if (nav.getAttribute('id') == 'nav2') {
