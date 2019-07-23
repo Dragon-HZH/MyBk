@@ -1,7 +1,7 @@
 {
   "name": "myBk",
   "version": "1.0.0",
-  "description": "",
+  "description": "我的网站\r 使用的技术:\r     position定位布局\r     Ajax做异步的请求\r     html5新特性的使用\r     css3新特性的使用",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -12,5 +12,14 @@
   "dependencies": {
     "express": "^4.17.1",
     "mysql": "^2.17.1"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dragon-HZH/MyBk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Dragon-HZH/MyBk/issues"
+  },
+  "homepage": "https://github.com/Dragon-HZH/MyBk#readme"
 }
