@@ -1,5 +1,5 @@
 body {
-    background-image: url('/bg_login.jpg');
+    background-image: url(/img/bg_login.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -38,19 +38,19 @@ body {
     outline: none;
     border: 1px solid #ccc;
     border-radius: 2px;
-    background-image: url(/yhm.png);
+    background-image: url(/img/yhm.png);
     background-repeat: no-repeat;
     background-position: 96% center;
 }
 
 #content>div:nth-child(5)>input {
-    background-image: url(/mm.png);
+    background-image: url(/img/mm.png);
     background-repeat: no-repeat;
     background-position: 96% center;
 }
 
 #content>div:nth-child(6)>input {
-    background-image: url(/mm.png);
+    background-image: url(/img/mm.png);
     background-repeat: no-repeat;
     background-position: 96% center;
 }

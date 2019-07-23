@@ -58,12 +58,12 @@
 
 #btn-left {
     left: 20px;
-    background-image: url(/courses/left_ar.png);
+    background-image: url(/img/courses/left_ar.png);
 }
 
 #btn-right {
     right: 20px;
-    background-image: url(/courses/right_ar.png);
+    background-image: url(/img/courses/right_ar.png);
 }
 
 #btn-left:hover, #btn-right:hover {

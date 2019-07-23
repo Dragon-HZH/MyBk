@@ -6,8 +6,8 @@ $(function(){
         // dataType: "dataType",
         success: function (result) {
             $(result).replaceAll("#header");  //替换header
-            $(`<link rel="stylesheet" href="/header.css">`).appendTo('head');
-            $(`<script src="/updow.js"></script>`).appendTo('body');
+            $(`<link rel="stylesheet" href="css/header.css">`).appendTo('head');
+            $(`<script src="js/updow.js"></script>`).appendTo('body');
         }
     });
 });

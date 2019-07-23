@@ -119,7 +119,7 @@ section .section-l div {
     width: 20px;
     height: 20px;
     margin-left: 15px;
-    background-image: url(/icons.png);
+    background-image: url(/img/icons.png);
     background-repeat: no-repeat;
     background-position: -27px -14px;
     cursor: pointer;
@@ -263,7 +263,7 @@ section .section-r {
     top: 50%;
     right: 20px;
     transform: translateY(-50%);
-    background-image: url(/icon-sou.png);
+    background-image: url(/img/icon-sou.png);
     background-repeat: no-repeat;
 }
 

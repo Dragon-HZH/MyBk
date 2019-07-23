@@ -18,10 +18,11 @@ app.use( bodyParser.urlencoded({
 
 
 // 托管静态文件
-app.use(express.static('public/html'));
-app.use(express.static('public/img'));
-app.use(express.static('public/css'));
-app.use(express.static('public/js'));
+// app.use(express.static('public/html'));
+// app.use(express.static('public/img'));
+// app.use(express.static('public/css'));
+// app.use(express.static('public/js'));
+app.use(express.static('public'));
 
 
 //使用路由
