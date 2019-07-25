@@ -64,7 +64,7 @@ header>nav#nav2{
     overflow: hidden;
 }
 
-nav>ul, nav>ul>li, img {
+nav>ul, nav>ul>li, nav>img {
     margin-top: 5px;
     float: left;
 }
