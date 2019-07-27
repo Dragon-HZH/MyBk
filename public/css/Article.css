@@ -1,17 +1,16 @@
-body{
-    background-color: rgba(241, 241, 241, 0.712);
-}
+
 section{
     width: 80%;
-    margin: 50px auto 0;
+    margin: 100px auto 0;
     /* border: 1px solid red; */
     /* height: 500px; */
 }
 
 section>h2:first-child{
     line-height: 42px;
-    border-bottom: 1px  solid #ccc;
-    box-shadow: 0 0 1px 1px 
+    border-bottom: 2px  solid #000;
+    margin-bottom: 30px;
+    /* box-shadow: 0 0 1px 1px  */
 }
 section>h2:first-child span{
     font-size: 22px;
@@ -21,4 +20,85 @@ section>h2:first-child span{
     display: inline-block;
     background-color: #000;
     color: #fff;
+}
+
+section form{
+    border-radius: 5px;
+    padding:20px 20px 60px;
+    border:1px solid #aaa;
+    background-color: rgba(218, 218, 218, 0.171);
+    position: relative;
+}
+
+.form-p{
+    line-height: 28px;
+    font-size: 24px;
+    font-weight: 600;
+}
+.form-p input{
+    outline: 0;
+    padding: 3px 10px;
+}
+
+section form>h4{
+    margin:15px 0;
+}
+
+textarea{
+    padding: 10px;
+    line-height: 18px;
+}
+.button{
+    padding: 5px;
+    width: 130px;
+    position: absolute;
+    border: 0;
+    bottom: 15px;
+    left: 20px;
+    font-family: '宋体','楷体';
+    font-size: 20px;
+    text-align: center;
+    background-color: #aaa;
+    color: #fff;
+}
+.button:hover{
+    background-color: rgb(112, 112, 112);
+}
+
+div.notice{
+    width: 300px;
+    /* height: 400px; */
+    position: absolute;
+    top: 70px;
+    right: 60px;
+    background-color: #fff;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+div.notice h3{
+    color: #666;
+    font-family: '宋体','楷体';
+    font-size: 28px;
+    text-align: center;
+    margin-top: 15px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #aaa;
+}
+div.notice div{
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: rgba(206, 206, 206, 0.521);
+}
+
+footer {
+    width: 1215px;
+    margin: 50px auto 0;
+    /* background-color: #f2f2f2; */
+    border-top: 2px solid #000;
+    padding: 50px 0px;
+}
+
+footer p {
+    text-align: center;
 }

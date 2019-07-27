@@ -19,33 +19,62 @@
             <span>记录生活点滴</span>
         </h2>
         <form action="#" method="post">
-            <br>
-            <p>
-                <input class="comment_input" id="author" maxlength="50" name="author" required="required" size="25"
-                    tabindex="1" type="text">
+            <p class="form-p">
                 <label for="author">文章标题</label>
+                <input class="comment_input" id="author" maxlength="50" name="author" required="required" size="25"
+                    tabindex="1" type="text" autofocus>
             </p>
-            <br>
-            <p class="classification">
-                <input name="list" type="radio" value="1">个人生活
-                <input name="list" type="radio" value="2">工作生活
-                <input name="list" type="radio" value="3">其他趣事
+            <h4>分类:</h4>
+            <p class="lifeclass">
+                &nbsp;&nbsp;&nbsp;&nbsp;<input name="life" type="radio" value="1" id="life_1" checked><label
+                    for="life_1">个人生活</label>
+                <input name="life" type="radio" value="2" id="life_2"><label for="life_2">工作生活</label>
+                <input name="life" type="radio" value="3" id="life_3"><label for="life_3">其他趣事</label>
             </p>
 
-            <br>
-
-            <textarea name="contents" id="cnt" cols="150" rows="40"></textarea>
-            <br>
+            <h4>心情:</h4>
             <p>
-                <input id="id_article" name="article" type="hidden" value="1">
-                <input name="submit" type="submit" id="submit" tabindex="5" value="提交" class="button" />
+                &nbsp;&nbsp;&nbsp;&nbsp;<input name="mood" type="radio" value="1" id="mood_1" checked><label
+                    for="mood_1">开心</label>
+                <input name="mood" type="radio" value="2" id="mood_2"><label for="mood_2">纠结</label>
+                <input name="mood" type="radio" value="3" id="mood_3"><label for="mood_3">难过</label>
+                <input name="mood" type="radio" value="4" id="mood_4"><label for="mood_4">愤怒</label>
             </p>
             <br>
-        </form>
 
+
+            <textarea name="contents" id="cnt" cols="80" rows="20"></textarea>
+
+            <p>
+                <!-- <input id="id_article" name="article" type="hidden" value="1"> -->
+                <input name="submit" type="submit" id="submit" tabindex="5" value="提&nbsp;交" class="button" />
+            </p>
+
+            <div class="notice">
+                <h3>生活寄语</h3>
+                <div>
+                    不要轻易放弃。学习成长的路上，我们长路漫漫，只因青春无限。
+                </div>
+                <div>
+                    人生没有停靠站，现实永远是一个出发点。无论何时何
+                </div>
+                <div>
+                    有苦有乐的人生是充实的；有成有败的人生是合理
+                </div>
+                <div>
+                        不要轻易放弃。学习成长的路上，我们长路漫漫，只因青春无限。
+                </div>
+            </div>
+        </form>
     </section>
+    <footer>
+        <div>
+            <p>&copy;版权所有 | @2019-3 | 联系我们</p>
+        </div>
+    </footer>
     <script src="js/jquery-3.2.1.js"></script>
     <script src="js/header.js"></script>
+
 </body>
 
 </html>

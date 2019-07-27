@@ -77,8 +77,44 @@ div#all-photo>div {
     transition: all .5s .5s;
     opacity: 1;
 }
+/* --------分隔--------- */
+.all-item>div{
+    overflow: hidden;
+    position: relative;
+}
+.all-item>div>a{
+    width: 100px;
+    line-height: 36px;
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    margin-left: -58px;
+    z-index: 1000;
+    /* border: 1px solid #00f; */
+    padding:0 8px;
+    opacity: 0;
+}
+.all-item>div:hover .yca{
+    transition: all 0s .5s;
+    top: 50%;
+    margin-top: -18px;
+    opacity: 1;
+}
+a.yca>span{
+    border-radius: 3px;
+    padding:0 8px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    background-color: #000;
+}
+a.yca:hover span{
+    background-color: #00f;
+}
 
-/* 方框弹出的过度出效果 */
+
+/* 方框罩层弹出的过度出效果 */
 
 #all-photo>div>div::before {
     content: '';
@@ -157,6 +193,8 @@ div#all-photo>div {
     transition: all .5s ease-in-out;
 }
 
+/* 不用的元素的样式 */
+/* 
 #page-to-email {
     background: url(/img/banner/news-banner.jpg) no-repeat;
     background-size: 100% 100%;
@@ -307,8 +345,13 @@ div#all-photo>div {
 .bottom-left:hover div>span {
     transition: all .5s;
     margin-left: 3px;
-}
+} */
 
+
+
+
+
+/* 页脚 */
 footer {
     width: 1215px;
     margin: 0 auto;

@@ -10,8 +10,8 @@ const ajaxRouter = require('./routers/ajax');
 
 // 创建服务器对象，设置监听 
 const app = express();
-app.listen(8080, ()=>{
-    console.log('Server Listening on 8080...');
+app.listen(8088, ()=>{
+    console.log('Server Listening on http://127.0.0.1:8088');
 });
 
 app.use( bodyParser.urlencoded({

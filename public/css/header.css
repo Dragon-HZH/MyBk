@@ -33,6 +33,7 @@ a {
 header {
     /* border: 1px solid red; */
     padding-top: 70px;
+    margin-bottom: 130px;
 }
 
 /* 导航 */
@@ -71,10 +72,10 @@ nav>ul, nav>ul>li, nav>img {
 
 nav>ul {
     padding-left: 120px;
-    position: absolute;
+    position: relative;
 }
 
-nav a {
+nav ul a {
     display: block;
     text-align: center;
     font-size: 18px;
@@ -89,6 +90,25 @@ nav>ul ul a {
 }
 
 nav>ul>li:hover a {
+    background-color: rgb(63, 63, 63);
+    color: #fff;
+}
+
+nav>div{
+    position: absolute;
+    top: 17px;
+    right: 15%;
+}
+nav>div a{
+    float: left;
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    color: #666;
+    padding: 0 15px;
+}
+
+nav>div a:hover{
     background-color: rgb(63, 63, 63);
     color: #fff;
 }
@@ -120,7 +140,8 @@ nav>ul>li:hover .nav-hover {
 #banner {
     width: 100%;
     height: 380px;
-    background: url(/img/banner/banner-1.jpg) no-repeat 100%;
+    background: url(/img/banner/banner-1.jpg) no-repeat;
+    background-size: 100% 100%;
     position: relative;
     /* margin-top: 38px; */
 }
