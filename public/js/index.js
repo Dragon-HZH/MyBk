@@ -6,10 +6,11 @@ function getname(){
             let obj = JSON.parse(xhr.responseText);
             if(obj.code!=1){
                 bon_1.disabled = true;
-                u_name.style.backgroundColor = "red";
+                u_name.style.color = "#f00";
+                // u_name.style.backgroundColor = "red";
             }else{
-                u_name.style.color = "white";
-                u_name.style.backgroundColor = "yellowgreen";
+                u_name.style.color = "#0f0";
+                // u_name.style.backgroundColor = "#aaa";
             }
             u_name.innerHTML = obj.msg;
             

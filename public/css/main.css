@@ -52,11 +52,12 @@ div#all-photo>div {
 #all-photo>div>div {
     position: relative;
     cursor: pointer;
+    height: 220px;
 }
 
-#all-photo>div>div img {
+/* #all-photo>div>div img {
     float: none !important;
-}
+} */
 
 .yanChi {
     width: 50%;
@@ -81,6 +82,7 @@ div#all-photo>div {
 .all-item>div{
     overflow: hidden;
     position: relative;
+    box-shadow: 2px 2px 3px 1px rgb(31, 54, 70); 
 }
 .all-item>div>a{
     width: 100px;
@@ -102,16 +104,22 @@ div#all-photo>div {
 }
 a.yca>span{
     border-radius: 3px;
+    border: 1px solid #333;
     padding:0 8px;
     display: block;
+    text-align: center;
     width: 100%;
     height: 100%;
-    color: #fff;
-    background-color: #000;
+    color: #333;
+    background-color: rgb(216, 213, 213);
 }
 a.yca:hover span{
-    background-color: #00f;
+    background-color: rgb(33, 114, 180);
+    border: 1px solid rgb(216, 216, 216);
+    color: #fff;
 }
+
+
 
 
 /* 方框罩层弹出的过度出效果 */

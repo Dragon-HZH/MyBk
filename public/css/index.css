@@ -26,7 +26,7 @@ a{
     position: absolute;
     top: 115px;
     left: 150px;
-    background: rgba(255, 255, 255, .6);
+    background: rgba(255, 255, 255, 0.781);
     border-radius: 50% 50%;
 }
 
@@ -56,11 +56,13 @@ form .unit {
     text-align: center;
 }
 form .unit>span{
-    font-size: 12px;
-    color: red;
+    font-size: 18px;
+    line-height: 22px;
+    color: rgb(18, 1, 253);
+    text-shadow: 1px 1px 2px rgb(248, 246, 246);
     position: absolute;
-    top: 48px;
-    left: 100px;
+    top: 20px;
+    right: -12px;
 }
 
 
@@ -69,6 +71,7 @@ form input {
     line-height: 32px;
     font-size: 18px;
     padding-left: 15px;
+    margin-left: -55px;
     margin-bottom: 20px;
     border: 1px solid #717171;
     border-radius: 2px;
@@ -84,7 +87,7 @@ input#upwd{
 }
 
 #bon {
-    padding-left: 80px;
+    padding-left: 55px;
     padding-right: 20px;
 }
 
