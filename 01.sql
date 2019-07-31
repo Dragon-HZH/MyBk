@@ -12,47 +12,62 @@ use bk;
 create table user(
     uid int primary key auto_increment,
     uname varchar(20) unique not null,
-    upwd varchar(20)  not null,
+    upwd varchar(48)  not null,
     email varchar(50),
     index(upwd)
 );
 
 -- 插入模拟数据
 insert into user values
-(1,'huang','123456','1049694780@qq.com'),
-(2,'hzh','123456','143156520@qq.com'),
-(3,'yyy','123456','147963521@qq.com');
+(null,'huang','123456','1049694780@qq.com'),
+(null,'hzh','123456','143156520@qq.com'),
+(null,'yyy','123456','147963521@qq.com');
 
--- 验证信息表
-create table u_yz(
-    yid int primary key auto_increment,
-    y_uid int,
-    user_name varchar(32) not null,
-    gender tinyint,
-    email varchar(50),
-    phone varchar(20),
-    foreign key(y_uid) references user(uid)
+--文章,心情
+create table article(
+    a_id int primary key AUTO_INCREMENT,
+    a_uid int,
+    a_title varchar(50),
+    a_class int,
+    a_mood int,
+    a_content text,
+    a_time timestamp,
+    foreign key(a_uid) references user(uid)
 );
-
--- 创建发布信息表 mood心情
-create table u_text(
-tid int primary key auto_increment,
-t_uid int,
-mtime timestamp,
-mood varchar(20), 
-mtext text,
-foreign key(t_uid) references user(uid)
-);
-
 
 -- 用户图片的存储
-create table u_photo(
-    pid int primary key auto_increment,
+create table photos(
+    p_id int primary key auto_increment,
     p_uid int,
-    P_tid int,
-    p_route varchar(66),
-    p_type varchar(20),  
+    p_aid int,
+    p_url varchar(100),
+    p_type varchar(50),  
     foreign key(p_uid) references user(uid),
-    foreign key(p_tid) references user(uid)
+    foreign key(p_aid) references article(a_id)
 );
+
+--自评,反思
+create table reflect(
+    r_id int primary key auto_increment,
+    r_aid int,
+    r_time timestamp,
+    r_content text,
+    foreign key(r_aid) references article(a_id)
+)
+
+
+-- 详细信息表
+-- create table u_yz(
+--     yid int primary key auto_increment,
+--     y_uid int,
+--     user_name varchar(32) not null,
+--     gender tinyint,
+--     email varchar(50),
+--     phone varchar(20),
+--     foreign key(y_uid) references user(uid)
+-- );
+
+
+
+
 

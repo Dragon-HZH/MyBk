@@ -1,5 +1,14 @@
-
-
+section{
+    border: 1px solid red;
+    margin: 100px auto;
+    width: 1215px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+section img{
+    margin: 15px;
+}
 
 /* 页脚 */
 footer {

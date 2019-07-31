@@ -58,7 +58,7 @@ router.post('/reg',(req,res)=>{
             return;
         }
         if(values.affectedRows>0){
-            res.redirect('/login.html');
+            res.redirect('/index.html');
         }else{
             res.redirect('/register.html');
         }
