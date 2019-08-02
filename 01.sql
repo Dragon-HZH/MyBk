@@ -23,28 +23,45 @@ insert into user values
 (null,'hzh','123456','143156520@qq.com'),
 (null,'yyy','123456','147963521@qq.com');
 
+
+
+create table allmsg(
+    id int primary key AUTO_INCREMENT,
+    a_uid int,
+    title varchar(60),
+    class int,
+    mood int,
+    content text,
+    ctime timestamp,
+    img_url varchar(200),
+    reflect varchar(300),
+    describes int,
+    foreign key(a_uid) references user(uid)
+);
+-- 用户图片的存储
+create table photos(
+    p_id int primary key auto_increment,
+    p_uid int,
+    p_url varchar(100),
+    p_type varchar(50),  
+    foreign key(p_uid) references user(uid)
+);
+
 --文章,心情
 create table article(
     a_id int primary key AUTO_INCREMENT,
     a_uid int,
+    a_pid int,
     a_title varchar(50),
     a_class int,
     a_mood int,
     a_content text,
     a_time timestamp,
-    foreign key(a_uid) references user(uid)
+    foreign key(a_uid) references user(uid),
+    foreign key(a_pid) references photos(p_id)
 );
 
--- 用户图片的存储
-create table photos(
-    p_id int primary key auto_increment,
-    p_uid int,
-    p_aid int,
-    p_url varchar(100),
-    p_type varchar(50),  
-    foreign key(p_uid) references user(uid),
-    foreign key(p_aid) references article(a_id)
-);
+
 
 --自评,反思
 create table reflect(
