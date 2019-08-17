@@ -41,11 +41,14 @@ div#all-photo {
 }
 
 div#all-photo>div {
-    width: 370px;
     /* border: 1px solid red; */
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
-#all-photo>div>div+div {
+#all-photo>div>div {
     margin-top: 30px;
 }
 
@@ -79,6 +82,7 @@ div#all-photo>div {
     opacity: 1;
 }
 /* --------分隔--------- */
+
 .all-item>div{
     overflow: hidden;
     position: relative;

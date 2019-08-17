@@ -5,11 +5,11 @@ section {
     /* border: 1px solid red; */
 }
 
-#d-flex {
+/* #d-flex {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-}
+} */
 
 #d-flex img {
     float: none !important;
@@ -17,7 +17,10 @@ section {
 }
 
 #d-flex>div {
-    width: 370px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: start;
 }
 
 .date-ul {
